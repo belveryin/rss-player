@@ -1,0 +1,35 @@
+{
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015-node5": "^1.1.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.2.0",
+    "expand-tilde": "^1.2.0",
+    "lodash": "^4.6.1",
+    "mkdirp": "^0.5.1",
+    "player": "^0.6.1",
+    "rss-feed-emitter": "^1.0.4",
+    "source-map-support": "^0.4.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --source-maps",
+    "watch": "babel src --out-dir dist --source-maps --watch",
+    "start": "node dist/rss-player.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node5"
+    ]
+  },
+  "author": "belveryin",
+  "license": "MIT",
+  "name": "rss-player",
+  "version": "0.0.1",
+  "private": true,
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/belveryin/rss-player.git"
+  }
+}
