@@ -33,7 +33,7 @@ const saveTrackToFile = track => {
         }));
 };
 
-const COMMANDS = ['play', 'pause', 'next', 'prev'];
+const COMMANDS = ['play', 'pause', 'next'];
 // run player command
 const playerCommand = (cmd) => {
     player[cmd]();

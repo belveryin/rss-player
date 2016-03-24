@@ -32,7 +32,6 @@ export default {
     },
     pause: () => player.pause(),
     next: () => player.next(),
-    prev: () => player.prev(),
 
     addTrack: (track) => {
         track = _.clone(track);
