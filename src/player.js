@@ -24,13 +24,15 @@ export default {
             startToPlay = true;
         }
     },
-
     play: () => {
         setCurrentTrackIfEmpty();
 
         playlist.playing = true;
         player.play();
     },
+    pause: () => player.pause(),
+    next: () => player.next(),
+    prev: () => player.prev(),
 
     addTrack: (track) => {
         track = _.clone(track);
